@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THP Coaching Application</title>
+</head>
+<body style="margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #f5f5f5;">
+    <table width="100%" cellpadding="0" cellspacing="0" style="background-color: #f5f5f5; padding: 20px;">
+        <tr>
+            <td align="center">
+                <table width="600" cellpadding="0" cellspacing="0" style="background-color: #ffffff; border: 2px solid #000000; margin: 0 auto;">
+                    <!-- Header -->
+                    <tr>
+                        <td style="padding: 30px; border-bottom: 2px solid #000000; background-color: #000000;">
+                            <h1 style="margin: 0; font-size: 24px; font-weight: bold; color: #ffffff; text-align: center;">
+                                New THP Coaching Application
+                            </h1>
+                        </td>
+                    </tr>
+
+                    <!-- Contact Information -->
+                    <tr>
+                        <td style="padding: 25px; background-color: #f9f9f9; border-bottom: 2px solid #000000;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Contact Information
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Full Name:</strong>
+                                        <span style="color: #333333;">{{fullName}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Email:</strong>
+                                        <span style="color: #333333;">{{email}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Phone:</strong>
+                                        <span style="color: #333333;">{{phone}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Instagram:</strong>
+                                        <span style="color: #333333;">{{instagram}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Basic Information -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Basic Information
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Gender:</strong>
+                                        <span style="color: #333333;">{{gender}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Goals -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Goals
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Current Goals:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{currentStateGoals}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Other Goal:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{otherGoal}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Most Important Goal:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{mostImportantGoal}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Body Composition -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Body Composition
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Current Weight:</strong>
+                                        <span style="color: #333333;">{{currentWeight}} lbs</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Height:</strong>
+                                        <span style="color: #333333;">{{height}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Age:</strong>
+                                        <span style="color: #333333;">{{age}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Current Body Fat:</strong>
+                                        <span style="color: #333333;">{{bodyFatCurrent}}%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Goal Body Fat:</strong>
+                                        <span style="color: #333333;">{{bodyFatGoal}}%</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Duration at Current Body Fat:</strong>
+                                        <span style="color: #333333;">{{bodyFatDuration}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Symptoms -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Symptoms
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Symptoms with Severity:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{symptoms}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Other Symptom:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{otherSymptom}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Symptom Duration:</strong>
+                                        <span style="color: #333333;">{{symptomDuration}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Bloodwork -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Bloodwork Status
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Status:</strong>
+                                        <span style="color: #333333;">{{bloodworkStatus}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Testosterone Level:</strong>
+                                        <span style="color: #333333;">{{testosteroneLevel}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Last Labs Date:</strong>
+                                        <span style="color: #333333;">{{lastLabsDate}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Previous Attempts -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                What They've Tried
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Previous Attempts:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{previousAttempts}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Supplements Used:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6;">{{supplementsUsed}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">What Tried:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{whatTried}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">How Long Stuck:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{howLongStuck}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Why Stopped Working:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{whyStoppedWorking}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Why Still Looking for Help:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{whyStillLooking}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Lifestyle & Training -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Lifestyle & Training
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Hours Per Week:</strong>
+                                        <span style="color: #333333;">{{hoursPerWeek}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Current Training Program:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{currentTrainingProgram}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Medical Conditions:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{medicalConditions}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Stress/Sleep Situation:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{stressSleepSituation}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Future Vision -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Future Vision
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">What Happens if NOT Fixed in 6 Months:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{consequences}}</div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0; padding-top: 15px;">
+                                        <strong style="color: #000000;">Life if Problem Was Solved:</strong>
+                                        <div style="color: #333333; margin-top: 5px; line-height: 1.6; white-space: pre-wrap;">{{lifeSolved}}</div>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Referral -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                How They Found THP
+                            </h2>
+                            <div style="color: #333333; line-height: 1.6; white-space: pre-wrap;">{{howFoundUs}}</div>
+                        </td>
+                    </tr>
+
+                    <!-- Referral Status -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Referral Status
+                            </h2>
+                            <table width="100%" cellpadding="0" cellspacing="0">
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Was Referred:</strong>
+                                        <span style="color: #333333;">{{wasReferred}}</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="padding: 8px 0;">
+                                        <strong style="color: #000000;">Referred By:</strong>
+                                        <span style="color: #333333;">{{referredBy}}</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <!-- Commitment -->
+                    <tr>
+                        <td style="padding: 25px; border-bottom: 1px solid #e0e0e0;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Commitment Level
+                            </h2>
+                            <div style="color: #333333; font-size: 16px;"><strong>{{commitmentLevel}}/10</strong></div>
+                        </td>
+                    </tr>
+
+                    <!-- Investment -->
+                    <tr>
+                        <td style="padding: 25px; background-color: #f9f9f9;">
+                            <h2 style="margin: 0 0 15px 0; font-size: 18px; font-weight: bold; color: #000000;">
+                                Investment Range
+                            </h2>
+                            <div style="color: #333333; font-size: 16px; font-weight: bold;">{{investmentRange}}</div>
+                        </td>
+                    </tr>
+
+                    <!-- Footer -->
+                    <tr>
+                        <td style="padding: 20px; text-align: center; border-top: 2px solid #000000; background-color: #000000;">
+                            <p style="margin: 0; font-size: 12px; color: #ffffff;">
+                                Application submitted via THP Coaching Application Form
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
